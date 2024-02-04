@@ -1,0 +1,100 @@
+Received response ID 230, code 5, length = 20
+Received response ID 39, code 5, length = 20
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <title>CC Networks</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css"/>
+  <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" type="text/css"/>
+  <style type="text/css">
+    <!--/*--><![CDATA[/*><!--*/
+    body {
+      padding-top: 70px;
+    }
+    /*]]>*/-->
+    </style>
+</head>
+<body>
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/account/logout">Logout</a>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  <div id="content" class="container">
+
+<div class="row">
+  <div class="col-md-6 col-xs-12">
+    <h2>Authorize this machine</h2>
+        <p>
+      You can authorize the machine <span class="label label-primary">10.22.42.64</span> for proxy-less access to the internet using the buttons below.
+    </p>
+    
+    <form method="post" action="/account/approve">
+            
+      <!-- Form Name -->
+      <legend>Duration of Authorization</legend>
+      
+      <!-- Multiple Radios -->
+      <div class="form-group">
+        <label class="control-label" for="radios-0">
+          <input type="radio" name="duration" id="radios-0" value="1" checked="checked">
+          1 hour (recommended for public machines)
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <label for="radios-1">
+          <input type="radio" name="duration" id="radios-1" value="2">
+          1 day
+        </label>
+      </div>
+     
+      <div class="form-group">
+        <label for="radios-2">
+          <input type="radio" name="duration" id="radios-2" value="3">
+          1 month (use with caution, use only on personal office machines)
+        </label>
+      </div>
+ 
+      <!-- Button -->
+      <div class="form-group">
+        <button id="approveBtn" name="approveBtn" class="form-control btn btn-primary">Authorize</button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="col-md-6 col-xs-12">
+    <div class="alert alert-info">
+      <strong>Note:</strong> In case this does not work, then the IP address you are currently logged in from may not yet be on the set approved for such access.  We are working on it.
+    </div>
+
+    <h3><span class="label label-danger">IMPORTANT</span></h3>
+    
+    <p>
+      By approving the machine, you confirm that you have read and understood the terms of the Acceptable Use Policy of the IIT Madras Computer Centre with regard to use of Computing and Network resources. The complete policy is available at <a href="https://cc.iitm.ac.in/node/27"><span class="label label-info">Acceptable Use Policy</span></a>.  Please read through it and understand it before you proceed.
+    </p>
+  </div>
+</div>  
+
+</div> <!-- the content div -->
+</body>
+</html>
